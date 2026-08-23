@@ -1,0 +1,19 @@
+# Registers the Pi review plugin into a DSH profile.
+# `dsh plugin --profile <name> add ./dsh-pi-review` merges this patch into the
+# profile's cordis.yml. Every value below is optional -- the Schemastery schema
+# in src/config.ts supplies defaults for anything omitted.
+#
+# No credentials are configured here. Pi resolves its own authentication and its
+# own default provider/model, so leaving `provider` and `model` unset is the
+# normal case.
+- insert:
+    - id: pi-review
+      name: dsh-pi-review
+      config:
+        binary: pi
+        thinking: high
+        readOnly: true
+        timeoutMs: 600000
+        maxDiffBytes: 240000
+        defaultBaseRef: origin/main
+        includeUntracked: true
