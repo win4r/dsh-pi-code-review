@@ -1,3 +1,5 @@
+# [🚀观看我的哔哩哔哩视频](https://space.bilibili.com/3493277319825652)
+
 # dsh-pi-review
 
 A [DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) plugin that delegates
